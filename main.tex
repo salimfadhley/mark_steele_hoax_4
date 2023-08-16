@@ -1,0 +1,95 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\pdfoutput=1
+
+\usepackage{ijcb}
+\usepackage{times}
+\usepackage{epsfig}
+
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+
+\makeatletter
+\let\NAT@parse\undefined
+\makeatother
+\usepackage[sort,numbers]{natbib}
+%\usepackage{hyperref}
+
+\graphicspath{ {images/} }
+
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+%\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\ijcbfinalcopy % *** Uncomment this line for the final submission
+
+\def\ijcbPaperID{116} % *** Enter the IJCB Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ifijcbfinal\pagestyle{empty}\fi
+
+\makeatletter
+\def\ps@IEEEtitlepagestyle{
+\def\@oddfoot{\mycopyrightnotice}
+\def\@evenfoot{}
+}
+\def\mycopyrightnotice{
+{\hfill \footnotesize 978-1-7281-9186-7/20/\$31.00 \copyright 2020 IEEE\hfill}
+}
+\makeatother
+
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Long-Term Face Tracking for Crowded Video-Surveillance Scenarios}
+
+\author{Germán Barquero, Carles Fernández and Isabelle Hupont\\
+Herta\\
+C/ Pau Claris 165, 4B - 08037 Barcelona (Spain)\\
+{\tt\small \{german.barquero,carles.fernandez,isabelle.hupont\}@hertasecurity.com}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+Most current multi-object trackers focus on short-term tracking, and are based on deep and complex systems that do not operate in real-time, often making them impractical for video-surveillance. In this paper, we present a long-term multi-face tracking architecture conceived for working in crowded contexts, particularly unconstrained in terms of movement and occlusions, and where the face is often the only visible part of the person. Our system benefits from advances in the fields of face detection and face recognition to achieve long-term tracking. It follows a tracking-by-detection approach, combining a fast short-term visual tracker with a novel online tracklet reconnection strategy grounded on face verification. Additionally, a correction module is included to correct past track assignments with no extra computational cost. We present a series of experiments introducing novel, specialized metrics for the evaluation of long-term tracking capabilities and a video dataset that we publicly release. Findings demonstrate that, in this context, our approach allows to obtain up to 50\% longer tracks than state-of-the-art deep learning trackers.  
+\end{abstract}
+
+\let\thefootnote\relax\footnotetext{\mycopyrightnotice}
+
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_methodology}
+\input{sections/04_eval_metrics}
+\input{sections/05_exp_results}
+\input{sections/06_conclusions}
+
+\section{ACKNOWLEDGMENTS}
+This work was partly funded by the Spanish project AI-MARS (CIEN CDTI Programme, grant number IDI-20181108). I. Hupont was supported by the Torres Quevedo Programme (PTQ-16-08735).
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{bibliography}
+}
+
+\end{document}

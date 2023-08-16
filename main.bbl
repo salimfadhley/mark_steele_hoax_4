@@ -1,0 +1,173 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{bochinski2018viou}
+E.~Bochinski, T.~Senst, and T.~Sikora.
+\newblock Extending {IOU} based multi-object tracking by visual information.
+\newblock In {\em IEEE Int. Conference on Advanced Video and Signal Based
+  Surveillance}, pages 1--6, 2018.
+
+\bibitem{bolme2010visual}
+D.~S. Bolme, J.~R. Beveridge, B.~A. Draper, and Y.~M. Lui.
+\newblock Visual object tracking using adaptive correlation filters.
+\newblock In {\em CVPR}, pages 2544--2550, 2010.
+
+\bibitem{chen2019integrated}
+K.~Chen, X.~Song, X.~Zhai, B.~Zhang, B.~Hou, and Y.~Wang.
+\newblock An integrated deep learning framework for occluded pedestrian
+  tracking.
+\newblock {\em IEEE Access}, 7:26060--26072, 2019.
+
+\bibitem{comaschi2015online}
+F.~Comaschi, S.~Stuijk, T.~Basten, and H.~Corporaal.
+\newblock Online multi-face detection and tracking using detector confidence
+  and structured {SVM}s.
+\newblock 2015.
+
+\bibitem{dendorfer2019cvpr19}
+P.~Dendorfer, H.~Rezatofighi, A.~Milan, J.~Shi, D.~Cremers, I.~Reid, S.~Roth,
+  K.~Schindler, and L.~Leal-Taixe.
+\newblock {CVPR19} tracking and detection challenge: {H}ow crowded can it get?
+\newblock {\em arXiv preprint arXiv:1906.04567}, 2019.
+
+\bibitem{deng2019arcface}
+J.~Deng, J.~Guo, N.~Xue, and S.~Zafeiriou.
+\newblock Arc{F}ace: Additive angular margin loss for deep face recognition.
+\newblock In {\em CVPR}, pages 4690--4699, 2019.
+
+\bibitem{deng2014datasetPETA}
+Y.~Deng, P.~Luo, C.~C. Loy, and X.~Tang.
+\newblock Pedestrian attribute recognition at far distance.
+\newblock In {\em ACM Int. Conference on Multimedia}, pages 789--792, 2014.
+
+\bibitem{dewan2016adaptive}
+M.~A.~A. Dewan, E.~Granger, G.-L. Marcialis, R.~Sabourin, and F.~Roli.
+\newblock Adaptive appearance model tracking for still-to-video face
+  recognition.
+\newblock {\em Pattern Recognition}, 49:129--151, 2016.
+
+\bibitem{kalal2010face}
+Z.~Kalal, K.~Mikolajczyk, and J.~Matas.
+\newblock Face-{TLD}: {T}racking-learning-detection applied to faces.
+\newblock In {\em ICIP}, pages 3789--3792, 2010.
+
+\bibitem{kalal2010forward}
+Z.~Kalal, K.~Mikolajczyk, and J.~Matas.
+\newblock Forward-backward error: Automatic detection of tracking failures.
+\newblock In {\em Int. Conference on Pattern Recognition}, pages 2756--2759,
+  2010.
+
+\bibitem{kuhn1955hungarian}
+H.~W. Kuhn.
+\newblock The hungarian method for the assignment problem.
+\newblock {\em Naval research logistics quarterly}, 2(1-2):83--97, 1955.
+
+\bibitem{li2019siamrpn++}
+B.~Li, W.~Wu, Q.~Wang, F.~Zhang, J.~Xing, and J.~Yan.
+\newblock Siam{RPN}++: Evolution of siamese visual tracking with very deep
+  networks.
+\newblock In {\em CVPR}, pages 4282--4291, 2019.
+
+\bibitem{li2014datasetCUHK}
+W.~Li, R.~Zhao, T.~Xiao, and X.~Wang.
+\newblock Deep{R}e{ID}: {D}eep filter pairing neural network for person
+  re-identification.
+\newblock In {\em CVPR}, 2014.
+
+\bibitem{lin2018offline}
+C.-C. Lin and Y.~Hung.
+\newblock A prior-less method for multi-face tracking in unconstrained videos.
+\newblock In {\em CVPR}, pages 538--547, 2018.
+
+\bibitem{lin2019mobiface}
+Y.~Lin, S.~Cheng, J.~Shen, and M.~Pantic.
+\newblock Mobiface: A novel dataset for mobile face tracking in the wild.
+\newblock In {\em IEEE Int. Conference on Automatic Face \& Gesture
+  Recognition}, pages 1--8, 2019.
+
+\bibitem{liu2018datasetShanghaiTech}
+W.~Liu, D.~L. W.~Luo, and S.~Gao.
+\newblock Future frame prediction for anomaly detection -- a new baseline.
+\newblock In {\em CVPR}, 2018.
+
+\bibitem{lukezic2017discriminative}
+A.~Lukezic, T.~Vojir, L.~ˇCehovin~Zajc, J.~Matas, and M.~Kristan.
+\newblock Discriminative correlation filter with channel and spatial
+  reliability.
+\newblock In {\em CVPR}, pages 6309--6318, 2017.
+
+\bibitem{milan2016mot16}
+A.~Milan, L.~Leal-Taix{\'e}, I.~Reid, S.~Roth, and K.~Schindler.
+\newblock Mot16: A benchmark for multi-object tracking.
+\newblock {\em arXiv preprint arXiv:1603.00831}, 2016.
+
+\bibitem{nikitin2014facequality}
+M.~Nikitin, V.~Konushin, and A.~Konushin.
+\newblock Face quality assessment for face verification in video.
+\newblock In {\em \foreignlanguage{russian}{Графикон}'2014}, pages
+  111--114, 2014.
+
+\bibitem{rodriguez2011datasetDriven}
+M.~Rodriguez, J.~Sivic, I.~Laptev, and J.-Y. Audibert.
+\newblock Data-driven crowd analysis in videos.
+\newblock In {\em ICCV}, pages 1235--1242, 2011.
+
+\bibitem{sauer2019holistic}
+A.~Sauer, E.~Aljalbout, and S.~Haddadin.
+\newblock Tracking holistic object representations.
+\newblock {\em arXiv preprint arXiv:1907.12920}, 2019.
+
+\bibitem{voigtlaender2019trackingsegm}
+P.~Voigtlaender, M.~Krause, A.~Osep, J.~Luiten, B.~B.~G. Sekar, A.~Geiger, and
+  B.~Leibe.
+\newblock {MOTS}: Multi-object tracking and segmentation.
+\newblock In {\em CVPR}, pages 7942--7951, 2019.
+
+\bibitem{wangtracking}
+G.~Wang, C.~Luo, X.~Sun, Z.~Xiong, and W.~Zeng.
+\newblock Tracking by instance detection: {A} meta-learning approach.
+\newblock In {\em CVPR}, 2020.
+
+\bibitem{wang2019siammask}
+Q.~Wang, L.~Zhang, L.~Bertinetto, W.~Hu, and P.~H. Torr.
+\newblock Fast online object tracking and segmentation: A unifying approach.
+\newblock In {\em CVPR}, pages 1328--1338, 2019.
+
+\bibitem{wong2011chokepoint}
+Y.~Wong, S.~Chen, S.~Mau, C.~Sanderson, and B.~C. Lovell.
+\newblock Patch-based probabilistic image quality assessment for face selection
+  and improved video-based face recognition.
+\newblock In {\em CVPR 2011 Workshops}, pages 74--81, 2011.
+
+\bibitem{zhang2015datasetWorldExpo}
+C.~Zhang, H.~Li, X.~Wang, and X.~Yang.
+\newblock Cross-scene crowd counting via deep convolutional neural networks.
+\newblock In {\em CVPR}, pages 833--841, 2015.
+
+\bibitem{zhang2016offline}
+S.~Zhang, Y.~Gong, J.-B. Huang, J.~Lim, J.~Wang, N.~Ahuja, and M.-H. Yang.
+\newblock Tracking persons-of-interest via adaptive discriminative features.
+\newblock In {\em ECCV}, pages 415--433, 2016.
+
+\bibitem{zhang2017faceboxes}
+S.~Zhang, X.~Zhu, Z.~Lei, H.~Shi, X.~Wang, and S.~Z. Li.
+\newblock Faceboxes: A cpu real-time face detector with high accuracy.
+\newblock In {\em IEEE Int. Joint Conference on Biometrics}, pages 1--9, 2017.
+
+\bibitem{zheng2018automatic}
+J.~Zheng, R.~Ranjan, C.-H. Chen, J.-C. Chen, C.~D. Castillo, and R.~Chellappa.
+\newblock An automatic system for unconstrained video-based face recognition.
+\newblock {\em arXiv preprint arXiv:1812.04058}, 2018.
+
+\bibitem{zhu20173ddfa}
+X.~Zhu, X.~Liu, Z.~Lei, and S.~Z. Li.
+\newblock Face alignment in full pose range: A 3d total solution.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  41(1):78--92, 2017.
+
+\bibitem{zhu2018dasiamrpn}
+Z.~Zhu, Q.~Wang, B.~Li, W.~Wu, J.~Yan, and W.~Hu.
+\newblock Distractor-aware siamese networks for visual object tracking.
+\newblock In {\em European Conference on Computer Vision}, pages 101--117,
+  2018.
+
+\end{thebibliography}

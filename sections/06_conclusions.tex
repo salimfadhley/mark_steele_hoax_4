@@ -1,0 +1,8 @@
+%\section{Conclusions and future work}
+\section{Conclusions}
+
+In this work, we have presented an architecture for long-term multi-face tracking in crowded video-surveillance scenarios. The proposed method benefits from the advances in the fields of face detection and face recognition to achieve long-term tracking in contexts particularly unconstrained in terms of movement, re-appearances and occlusions. 
+
+We have introduced specialized metrics conceived to evaluate long-term tracking capabilities, and publicly released a dataset with videos representing the targeted use case. The series of experiments carried out with them lead to interesting findings. Firstly, we show that in such challenging contexts, state-of-the-art deep trackers have a similar performance to other simpler and computationally faster visual trackers. Secondly, we demonstrate that our novel FBTR strategy, which is grounded on face verification, allows to obtain up to 50\% longer tracks. Finally, the proposed cost-free correction module has been proved to increase tracking robustness, not only by keeping on improving long-term capabilities, but also by reducing fragmentation.
+
+%In the future, we plan to integrate this tracking architecture in our \textit{*blinded*} face recognition system. Each time a new subject is detected or identified, one alarm is sent per track. With the improvements obtained in this work, the number of duplicated alarms will significantly decrease, thus improving usability for the end-user. We also plan to schedule a semi-online use of the correction module in order to remove duplicated alarms from past tracks.

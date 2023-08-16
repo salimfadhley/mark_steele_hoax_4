@@ -1,0 +1,43 @@
+\section{Evaluation metrics}
+
+%Metrics commonly used to evaluate multi-object trackers do not apply to our tracking-by-detection approach. Examples include the number of false positives/negatives, or the precision of the predicted bounding box \cite{bernardin2008clearmetrics}. Other popular metrics are however interesting to our use-case, such as the mismatch error, which describes the number of ID changes produced across tracks. 
+
+In this section, we introduce novel metrics especially suitable for evaluating the long-term tracking performance of our system. These metrics are grounded on those commonly used in multi-object tracking, such as mismatch errors (number of ID changes produced across tracks) or track fragmentations \cite{milan2016mot16}.
+
+One of the main challenges in multi-object tracking is to avoid drifting, i.e. losing a target. Assuming that the facial detector has high accuracy, in our use-case drifting only happens when two or more tracklets switch their target identity. The drifting effect becomes much more dramatic when incorporating reconnection capabilities: when switching its target, the tracklet integrity is lost, leaving the system vulnerable to future misassignments. Therefore, there is a need for revisiting the mismatch error metric by taking into account two new important concepts:
+
+\begin{itemize}
+    \item \textit{Soft-mismatch error (smme).} It is produced when the tracker switches the correct identity (ID) to a new one that has not been associated to any track until that time. This leads to ID-fragmentation, but can potentially be recovered by the FBTR module.
+    \item \textit{Hard-mismatch error (hmme).} It is produced when, instead of switching to a new identity, the tracker switches to a previously assigned one. This leads to a probably unrecoverable ID-switch.
+\end{itemize}
+
+Another desired feature of our system is its ability to obtain long-term tracklets. Thus, it is necessary to introduce metrics able to quantify the length of tracklets. Overall, the goal is to build a robust long-term tracker that reduces fragmentation while keeping the number of ID-switches low. To achieve it, we formulate three new scalar metrics and a graphical one: \\
+
+\noindent\textbf{Fragmentation (Frag)} 
+\begin{equation*}
+    Frag=\frac{\sum{smme}}{\#dets}
+\end{equation*}
+where the numerator is the sum of soft-mismatch errors produced in a video, and $\#dets$ is the total number of faces detected (according to ground truth annotations).\\
+
+\noindent\textbf{ID-Switches (IDSW)}
+\begin{equation*}
+    IDSW=\frac{\sum{hmme}}{\#dets}
+\end{equation*}
+where $hmme$ is the total number of hard-mismatch errors in the video.\\
+
+\noindent\textbf{Completion Rate Plot (CRP)}. 
+Plot showing the percentage of tracks (vertical axis) that had at least $X\%$ of their ground truth detections correctly identified (horizontal axis). In other words, it plots $CR_{X}$ values for $0\leq X \leq 100$, where:
+
+\begin{equation*}
+    CR_X=\frac{\textit{\# IDs correctly tracked for at least X\% of the time}}{\textit{total number of IDs}}
+\end{equation*}
+
+
+\noindent\textbf{Completion Rate Sum (CRS)}. 
+Area under the curve of the completion rate plot. The higher this value is, the longer subjects have been successfully tracked.
+\begin{equation*}
+    CRS=\frac{\sum_{X=1}^{100}{CR_X}}{100}\hspace{0.5cm}
+\end{equation*}
+
+
+
