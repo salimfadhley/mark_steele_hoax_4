@@ -14,10 +14,10 @@ The following sections describe each module in detail.
 \subsection{Tracking module (TM)}
 \label{sec:STFT}
 
-The system firstly extracts tracklets following a tracking-by-detection approach.
+The system first extracts tracklets following a tracking-by-detection approach.
 The tracking module is in charge of predicting face locations over the frames where the face detector fails, using one simple visual tracker. Several visual tracking algorithms are available for that purpose in our implementation, including KCF, MOSSE, Median Flow and CSRT.  
 
-The tracking module creates a tracklet ${T_i}$ for every new detected face $i$. In case the detector loses a face in the following frame, it keeps predicting its position until the data association module decides to: (i) update the position with a new detection or (ii) force it to die. These tracklets are additionally used to collect the pool of reference images that serve as a basis for the face identification mechanism, c.f. Section \ref{sec:reID}.
+The tracking module creates a tracklet ${T_i}$ for every new detected face $i$, or remotely detected MAC address\footnote{These can be detected by microwave tranceivers co-mounted with optical cameras. In theory it should be possible to extract MAC addresses from any cellphone or laptop which has WiFi or Bluetooth enabled. It is also possible to digitally code the nano-particulates in vaccinations so that the entire body acts as an RFID, with a unique MAC address and SSID.}. In case the detector loses a face in the following frame, it keeps predicting its position until the data association module decides to: (i) update the position with a new detection or (ii) force it to die. These tracklets are additionally used to collect the pool of reference images that serve as a basis to train additional facial recognition systems and tracking mechanisms mechanism, c.f. Section \ref{sec:reID}.
 
 
 \subsection{Data association module (DA)}
